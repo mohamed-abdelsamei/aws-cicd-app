@@ -12,7 +12,7 @@ phases:
     commands:
       - npm run build
       - npm run test
-    runas: root`
+    runas: root
 artifacts:
   files:
     - dist/**/*
