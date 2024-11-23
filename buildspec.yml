@@ -1,0 +1,21 @@
+# buildspec typescript
+version: 0.2
+phases:
+  install:
+    runtime-versions:
+      nodejs: 12
+  pre_build:
+    commands:
+      - npm install
+  build:
+    commands:
+      - npm run build
+      - npm run test
+artifacts:
+  files:
+    - dist/**/*
+    - node_modules/**/*
+    - package.json
+    - package-lock.json
+    - scripts/**/*
+  discard-paths: no
