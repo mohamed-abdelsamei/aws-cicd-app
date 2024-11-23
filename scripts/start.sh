@@ -1,2 +1,2 @@
 #!/bin/bash
-npm start
+pm2 start dist/index.js --name "app"
